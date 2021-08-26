@@ -81,7 +81,7 @@ export default {
       this.$store.commit("setIsLoading", true)
 
       await axios
-      .get('http://127.0.0.1:8000/api/v1/latest-products/')
+      .get(`/api/v1/latest-products/`)
       .then(response => {
         // Get the latest products object and use that as the response to return to Vue.
         this.latestProducts = response.data

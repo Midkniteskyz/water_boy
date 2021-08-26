@@ -56,7 +56,7 @@ export default {
         
             // await command will trigger line 67 to run after axios is done 
             await axios
-                .get(`http://127.0.0.1:8000/api/v1/products/${category_slug}/${product_slug}`)
+                .get(`/api/v1/products/${category_slug}/${product_slug}`)
                 .then(response => {
                     this.product = response.data
 

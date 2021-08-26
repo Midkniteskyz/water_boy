@@ -55,7 +55,7 @@ export default {
             this.$store.commit("setIsLoading", true)
 
             axios
-                .get(`http://127.0.0.1:8000/api/v1/products/${categorySlug}/`)
+                .get(`/api/v1/products/${categorySlug}/`)
                 .then(response => {
                     // get the category and also the products
                     this.category = response.data
